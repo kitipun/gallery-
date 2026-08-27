@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE ARCHIVE — Museum of Memories</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="nav">
+  <div class="logo"><b>THE ARCHIVE</b><span>MUSEUM OF MEMORIES</span></div>
+  <div class="nav-actions">
+    <button id="previewBtn">👁 Preview</button>
+    <button id="settingsBtn">⚙ Settings</button>
+    <button id="addBtn">＋ เพิ่มรูป</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-orb o1"></div><div class="hero-orb o2"></div>
+  <div class="hero-ribbon">MEMORIES • MOMENTS • LOVE • ARCHIVE • MEMORIES • MOMENTS • LOVE • ARCHIVE •</div>
+  <div class="hero-copy">
+    <span>PRIVATE DIGITAL EXHIBITION</span>
+    <h1>พิพิธภัณฑ์<br><i>ของช่วงเวลา</i></h1>
+    <p>เลื่อนลงเพื่อเดินผ่านเรื่องราวที่ถูกเก็บไว้</p>
+  </div>
+  <div class="hero-float" id="heroFloat"></div>
+  <div class="cute c1">✦</div><div class="cute c2">♡</div><div class="cute c3">୨୧</div>
+</section>
+
+<main id="museum">
+  <section class="zone museum" data-zone="museum">
+    <div class="zone-head"><span>WORLD 01</span><h2>Museum Salon</h2><p>กำแพงนิทรรศการสีขาวอมชมพู แสงนุ่ม และภาพที่ค่อย ๆ เข้ามาอยู่ใน spotlight</p></div>
+    <div class="salon" id="museumGallery"></div>
+    <div class="museum-deco bench"></div><div class="museum-deco sculpture">○</div>
+  </section>
+
+  <div class="transition vines"><span>❀</span><span>✿</span><span>❀</span><i></i></div>
+
+  <section class="zone nature" data-zone="nature">
+    <div class="cloud cloud1"></div><div class="cloud cloud2"></div>
+    <div class="zone-head"><span>WORLD 02</span><h2>Pink Garden</h2><p>ภาพเคลื่อนเฉียงผ่านสวน ดอกไม้และกลีบลอยสวนกันหลายชั้น</p></div>
+    <div class="diagonal-wrap"><div class="diagonal d1" id="natureA"></div><div class="diagonal d2" id="natureB"></div></div>
+    <div class="petals">✿　·　❀　°　✦　❀　·　✿　°　♡</div>
+  </section>
+
+  <div class="transition paws"><span>♡</span><span>•</span><span>♡</span><span>•</span><span>♡</span></div>
+
+  <section class="zone pets" data-zone="pets">
+    <div class="zone-head"><span>WORLD 03</span><h2>Pet Parade</h2><p>polaroid ขี้เล่น วิ่งสวนกัน มีโบว์ หัวใจ และ paw-inspired micro elements</p></div>
+    <div class="pet-row left" id="petsA"></div>
+    <div class="pet-row right" id="petsB"></div>
+    <div class="pet-deco bow">୨୧</div><div class="pet-deco heart">♡</div><div class="pet-deco star">✦</div>
+  </section>
+
+  <div class="transition album"><div class="album-cover">OUR<br>STORY</div></div>
+
+  <section class="zone family" data-zone="family">
+    <div class="curtain left-curtain"></div><div class="curtain right-curtain"></div>
+    <div class="zone-head"><span>WORLD 04</span><h2>Family Room</h2><p>อบอุ่นเหมือนเปิดอัลบั้มในบ้าน มี film strip และกรอบภาพที่ค่อย ๆ ลอยผ่าน</p></div>
+    <div class="family-feature" id="familyFeature"></div>
+    <div class="filmstrip" id="familyFilm"></div>
+    <div class="note">“บางช่วงเวลาไม่ต้องยิ่งใหญ่<br>ก็มีค่าพอจะเก็บไว้”</div>
+  </section>
+
+  <section class="zone memories" data-zone="memories">
+    <div class="zone-head"><span>WORLD 05</span><h2>Memory Atelier</h2><p>scrapbook แบบ editorial — ticket, stamp, tape, label และภาพหลายระดับความลึก</p></div>
+    <div class="atelier" id="memoryGallery"></div>
+    <div class="stamp">PRIVATE<br>ARCHIVE</div><div class="ticket">ADMIT ONE · 2026</div><div class="tape tape1"></div><div class="tape tape2"></div>
+  </section>
+
+  <section class="zone tunnel">
+    <div class="zone-head light"><span>SPECIAL INSTALLATION</span><h2>Memory Tunnel</h2><p>ภาพไหลเข้าหาผู้ชมต่อเนื่องเหมือนเดินผ่านทางเดินของความทรงจำ</p></div>
+    <div class="tunnel-stage" id="tunnel"></div>
+  </section>
+
+  <section class="finale">
+    <div class="finale-marquee">HAPPY BIRTHDAY • THE ARCHIVE IS STILL GROWING • HAPPY BIRTHDAY • THE ARCHIVE IS STILL GROWING •</div>
+    <div class="finale-cloud" id="finaleCloud"></div>
+    <div class="finale-copy"><span>FINALE</span><h2>ยังมีอีกหลายภาพ<br>ที่รอจะถูกเก็บไว้</h2><p>THE ARCHIVE · 2026 — ∞</p></div>
+    <div class="sparkles">✦　♡　✧　୨୧　✦　♡　✧</div>
+  </section>
+</main>
+
+<div class="empty" id="empty"><b>Gallery ยังว่างอยู่</b><span>เพิ่มรูป แล้วเลือกโลกที่ต้องการให้รูปไปอยู่</span><button id="emptyAdd">เพิ่มรูปแรก</button></div>
+
+<!-- UPLOAD -->
+<div class="modal" id="uploadModal">
+ <div class="sheet">
+  <button class="x" data-close="uploadModal">×</button>
+  <span class="eyebrow">ADD TO THE ARCHIVE</span><h3>เพิ่มรูปใหม่</h3>
+  <form id="uploadForm">
+   <label class="drop"><input id="files" type="file" accept="image/*" multiple><b>＋ เลือกรูป</b><span>เลือกได้หลายรูปพร้อมกัน</span></label>
+   <div id="previews" class="previews"></div>
+   <div class="form-grid">
+    <label>ชื่อ / Caption<input id="title" placeholder="เช่น วันธรรมดาที่ชอบ"></label>
+    <label>วันที่ / ปี<input id="meta" placeholder="เช่น 2026"></label>
+    <label>Theme<select id="zone"><option value="museum">🏛 Museum</option><option value="nature">🌷 Nature</option><option value="pets">🐾 Pets</option><option value="family">🏠 Family</option><option value="memories">💗 Memories</option></select></label>
+    <label>Display<select id="display"><option value="auto">Auto</option><option value="hero">Hero / Large</option><option value="polaroid">Polaroid</option><option value="film">Film</option><option value="floating">Floating</option></select></label>
+   </div>
+   <div class="checks"><label><input id="featured" type="checkbox"> Featured ★</label><label><input id="inFinale" type="checkbox" checked> Show in Finale</label></div>
+   <button class="primary">เพิ่มเข้า Gallery</button>
+  </form>
+ </div>
+</div>
+
+<!-- SETTINGS -->
+<div class="modal manager" id="settingsModal">
+ <div class="manager-sheet">
+  <button class="x" data-close="settingsModal">×</button>
+  <div class="manager-top"><div><span class="eyebrow">GALLERY MANAGER</span><h3>จัดการนิทรรศการ</h3></div><div id="stats"></div></div>
+  <div class="filters" id="filters">
+   <button class="active" data-filter="all">ทั้งหมด</button><button data-filter="museum">Museum</button><button data-filter="nature">Nature</button><button data-filter="pets">Pets</button><button data-filter="family">Family</button><button data-filter="memories">Memories</button><button data-filter="hidden">Hidden</button>
+  </div>
+  <div id="managerGrid" class="manager-grid"></div>
+ </div>
+</div>
+
+<!-- VIEWER -->
+<div class="viewer" id="viewer">
+ <button class="viewer-x" id="viewerClose">×</button><button class="viewer-nav prev" id="viewerPrev">←</button>
+ <figure><img id="viewerImg"><figcaption><span id="viewerNo"></span><div><b id="viewerTitle"></b><small id="viewerMeta"></small></div></figcaption></figure>
+ <button class="viewer-nav next" id="viewerNext">→</button>
+</div>
+
+<script src="script.js"></script>
+</body></html>
